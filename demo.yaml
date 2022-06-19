@@ -1,5 +1,5 @@
 - name: Practice
-hosts: all
+  hosts: all
 
 tasks:
 
