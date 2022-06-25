@@ -1,6 +1,8 @@
 - name: Practice
   hosts: all
-
+  vars:
+    - version: 7.2
+    - username: rakehs
   tasks:
    - name: Create user
      user:
@@ -26,4 +28,4 @@
    - name: Inserting into file
      lineinfile:
        path: /home/rakesh/demo/test
-       line: This is demo line       
+       line: "This is version: {{ version }} created by user: {{ username }}"      
